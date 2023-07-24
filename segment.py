@@ -126,10 +126,6 @@ class Ui_MainWindow(object):
         self.save = QtWidgets.QPushButton(parent=self.groupBox_3)
         self.save.setGeometry(QtCore.QRect(350, 53, 113, 32))
         self.save.setObjectName("save")
-        self.progress = QtWidgets.QProgressBar(parent=self.page_2)
-        self.progress.setGeometry(QtCore.QRect(20, 390, 211, 23))
-        self.progress.setProperty("value", 24)
-        self.progress.setObjectName("progress")
         self.toolBox.addItem(self.page_2, "")
         self.img_holder = QtWidgets.QLabel(parent=self.centralwidget)
         self.img_holder.setGeometry(QtCore.QRect(550, 10, 611, 531))
@@ -144,6 +140,9 @@ class Ui_MainWindow(object):
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1644, 24))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
         
 
         self.retranslateUi(MainWindow)
