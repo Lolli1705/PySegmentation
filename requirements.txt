@@ -1,0 +1,9 @@
+numpy
+PyQt6
+matplotlib
+scikit-image
+scipy
+opencv-python
+qimage2ndarray
+pyinstaller
+
