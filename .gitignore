@@ -3,7 +3,7 @@ __pycache__
 .pyc
 build
 dist
-main.spec
+.spec
 .DS_Store
 README.md
 run_venv_window.txt
