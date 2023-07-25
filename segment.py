@@ -128,7 +128,7 @@ class Ui_MainWindow(object):
         self.save.setObjectName("save")
         self.toolBox.addItem(self.page_2, "")
         self.img_holder = QtWidgets.QLabel(parent=self.centralwidget)
-        self.img_holder.setGeometry(QtCore.QRect(550, 10, 611, 531))
+        self.img_holder.setGeometry(QtCore.QRect(550, 120, 1000, 333))
         self.img_holder.setFrameShape(QtWidgets.QFrame.Shape.Box)
         self.img_holder.setText("")
         self.img_holder.setObjectName("img_holder")

@@ -162,7 +162,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.binary_img = gray2qimage(self.binary_img)
         qim = QImage(self.binary_img)
         self.img_holder.setScaledContents(True)
-        self.img_holder.setGeometry(QtCore.QRect(550, 10, self.img.shape[1], self.img.shape[0]))
+        self.img_holder.setGeometry(QtCore.QRect(550, 120, int(self.img.shape[1]/1.5), int(self.img.shape[0]/1.5)))
         self.img_holder.setPixmap(QPixmap.fromImage(qim))
         
 
@@ -185,7 +185,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.img_erode = gray2qimage(self.img_erode)
         qim = QImage(self.img_erode)
         self.img_holder.setScaledContents(True)
-        self.img_holder.setGeometry(QtCore.QRect(550, 10, self.img.shape[1], self.img.shape[0]))
+        self.img_holder.setGeometry(QtCore.QRect(550, 120, int(self.img.shape[1]/1.5), int(self.img.shape[0]/1.5)))
         self.img_holder.setPixmap(QPixmap.fromImage(qim))
 
     def set_kernel_size(self, val_):
@@ -216,7 +216,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # self.img_bin= gray2qimage(self.binary_img, normalize=True)
         # qim = QImage(self.img_bin)
         self.img_holder.setScaledContents(True)
-        self.img_holder.setGeometry(QtCore.QRect(550, 10, self.img.shape[1], self.img.shape[0]))
+        self.img_holder.setGeometry(QtCore.QRect(550, 120, int(self.img.shape[1]/1.5), int(self.img.shape[0]/1.5)))
         self.img_holder.setPixmap(QPixmap.fromImage(qim))
     
     def sel_output(self):
